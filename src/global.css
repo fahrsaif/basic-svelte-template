@@ -1,0 +1,31 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.btn {
+    @apply btn-sm
+}
+
+.input {
+    @apply input-sm
+}
+
+.file-input {
+    @apply file-input-sm
+}
+
+.select {
+    @apply select-sm
+}
+
+.textarea {
+    @apply textarea-sm
+}
+
+.table {
+    @apply table-sm
+}
+
+.text-base {
+    @apply text-sm
+}

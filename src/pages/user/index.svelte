@@ -18,7 +18,8 @@
 </script>
 
 {#if data}
-    <div class="flex justify-end mb-10">
+    <div class="flex justify-between mb-10">
+        <a href="/" class="btn">Back</a>
         <a href="/user/add" class="btn btn-primary">Add</a>
     </div>
     <div class="flex justify-between mb-10">

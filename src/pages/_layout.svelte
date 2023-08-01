@@ -31,18 +31,18 @@
                         <Bars3 />
                     </button>
                 </div>
-                <div class="tooltip tooltip-left" data-tip="Toggle Dark Mode">
-                    <label class="swap swap-rotate mt-1">
-                        <input type="checkbox" checked={$darkMode} on:click={toggleTheme} />
-                        <Moon class="swap-on" />
-                        <Sun class="swap-off" />
-                    </label>
-                </div>
             </div>
             <div class="navbar-center">
                 <a href="/" class="normal-case text-xl">App Name</a>
             </div>
             <div class="navbar-end">
+                <div class="tooltip tooltip-left" data-tip="Toggle Dark Mode">
+                    <label class="swap swap-rotate mt-1 px-3">
+                        <input type="checkbox" checked={$darkMode} on:click={toggleTheme} />
+                        <Moon class="swap-on" />
+                        <Sun class="swap-off" />
+                    </label>
+                </div>
                 <!-- logout button here -->
             </div>
         </div>

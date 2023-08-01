@@ -1,18 +1,18 @@
 const modules = [
     {
-        "name": "User Management App",
+        "name": "User Management",
         "url": "/user",
         "desc": "A User Management that help you manage user."
     },
     {
         "name": "Another Module",
-        "url": "/",
-        "desc": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum, enim."
+        "url": "/another",
+        "desc": "Lorem ipsum dolor sit amet consectetur adipisicing elit."
     },
     {
         "name": "Some Other Module",
-        "url": "/",
-        "desc": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum, enim."
+        "url": "/some-other",
+        "desc": "Lorem ipsum dolor sit amet consectetur adipisicing elit."
     }
 ]
 

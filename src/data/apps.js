@@ -1,8 +1,8 @@
 const apps = [
     {
-        "name": "Simple Todo App",
-        "url": "/todo",
-        "desc": "A Todo Collection that remind you what to do."
+        "name": "User Management App",
+        "url": "/user",
+        "desc": "A User Management that help you manage user."
     },
     {
         "name": "Another App",
@@ -10,7 +10,7 @@ const apps = [
         "desc": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum, enim."
     },
     {
-        "name": "Another App",
+        "name": "Some Other App",
         "url": "/",
         "desc": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum, enim."
     }

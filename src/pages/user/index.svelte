@@ -2,7 +2,7 @@
     import { onMount } from "svelte";
     import { DataHandler } from "@vincjo/datatables";
     import { Pagination, RowCount, RowsPerPage, Sort } from "../../components/datatables";
-    import { getResolutions } from "../../api/todo";
+    import { getUsers } from "../../api/user";
 
     let data;
 
@@ -10,7 +10,7 @@
     let rows;
 
     onMount(async () => {
-        data = await getResolutions();
+        data = await getUsers();
 
         handler = new DataHandler(data, { rowsPerPage: 10 });
         rows = handler.getRows();
@@ -20,26 +20,28 @@
 {#if data}
     <div class="flex justify-between mb-10">
         <RowsPerPage {handler} />
-        <a href="/kedb/add" class="btn btn-primary">Add</a>
+        <a href="/user/add" class="btn btn-primary">Add</a>
     </div>
     <div class="overflow-x-auto">
         <table class="table">
             <thead>
                 <tr>
-                    <Sort {handler} orderBy={(row) => row.id}>ID</Sort>
-                    <Sort {handler} orderBy={(row) => row.title}>Title</Sort>
-                    <Sort {handler} orderBy={(row) => row.completed}>Completed</Sort>
+                    <Sort {handler} orderBy={(row) => row.name}>Name</Sort>
+                    <Sort {handler} orderBy={(row) => row.username}>Username</Sort>
+                    <Sort {handler} orderBy={(row) => row.email}>Email</Sort>
+                    <Sort {handler} orderBy={(row) => row.phone}>Phone</Sort>
                     <th>Actions</th>
                 </tr>
             </thead>
             <tbody>
                 {#each $rows as row}
                     <tr>
-                        <td>{row.id}</td>
-                        <td>{row.title}</td>
-                        <td>{row.completed}</td>
+                        <td>{row.name}</td>
+                        <td>{row.username}</td>
+                        <td>{row.email}</td>
+                        <td>{row.phone}</td>
                         <td>
-                            <a class="btn" href="/kedb/{row.id}">Detail</a>
+                            <a class="btn" href="/user/{row.id}">Detail</a>
                         </td>
                     </tr>
                 {/each}

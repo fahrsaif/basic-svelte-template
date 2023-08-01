@@ -1,7 +1,7 @@
 <script>
     import { onMount } from "svelte";
     import { DataHandler } from "@vincjo/datatables";
-    import { Pagination, RowCount, RowsPerPage, Sort } from "../../components/datatables";
+    import { Pagination, RowCount, RowsPerPage, Search, Sort } from "../../components/datatables";
     import { getUsers } from "../../api/user";
 
     let data;
@@ -18,9 +18,12 @@
 </script>
 
 {#if data}
+    <div class="flex justify-end mb-10">
+        <a href="/user/add" class="btn btn-primary">Add</a>
+    </div>
     <div class="flex justify-between mb-10">
         <RowsPerPage {handler} />
-        <a href="/user/add" class="btn btn-primary">Add</a>
+        <Search {handler} />
     </div>
     <div class="overflow-x-auto">
         <table class="table">

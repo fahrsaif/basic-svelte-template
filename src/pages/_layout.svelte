@@ -1,5 +1,5 @@
 <script>
-    import modules from "../data/modules";
+    import modules from "../config/modules";
     import { darkMode, notification } from "../library/store";
     import { initTheme, toggleTheme } from "../library/theme";
     import { onMount } from "svelte";

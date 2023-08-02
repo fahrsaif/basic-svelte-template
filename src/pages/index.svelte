@@ -1,5 +1,5 @@
 <script>
-    import modules from "../data/modules";
+    import modules from "../config/modules";
 </script>
 
 <div class="flex gap-5">

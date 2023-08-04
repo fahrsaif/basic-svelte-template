@@ -20,4 +20,5 @@ I use small size by applying '-sm' suffix to following classes:
 - textarea
 - table
 - text-base
-You can remove that in src/global.css if you want to use default size
+
+You can remove that in src/global.css if you would like to use default size

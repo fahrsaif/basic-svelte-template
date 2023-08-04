@@ -1,8 +1,8 @@
 const modules = [
     {
-        "name": "User Management",
-        "url": "/user",
-        "desc": "A User Management that help you manage user."
+        "name": "Blog Post Management",
+        "url": "/post",
+        "desc": "A list of Blog posts that also demonstrate the use of Datatable."
     },
     {
         "name": "Another Module",
